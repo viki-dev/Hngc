@@ -1,0 +1,58 @@
+.navbar1
+{   color:white;
+    margin-left:20px ;
+    margin-top:-20px;
+    margin-right:90px;
+}
+.btn-default
+{
+    width:10px;
+}
+.topnav
+{
+  position:relative;  
+}
+.list:hover
+{
+    background-color:#c4c4c4;
+}
+.list
+{
+    transition:1.5s;
+}
+.arrow
+{
+    padding-left:2px;
+    margin-top:1px;
+}
+.nav-label1
+{
+    text-transform:none;
+}
+.leftbar
+{
+    position:relative;
+     border-right-style: none;
+     border-width:1px;
+}
+
+.media-list
+{
+    margin-left:0px;
+    margin-right:30px;
+}
+.con
+{
+    margin-top:30px;
+    border-radius:15px;
+}
+.active
+{
+    border-radius:30px;
+    border-width:1px;
+}
+.searchbar
+{
+    border-radius:10px;
+    border-width:1px;
+}

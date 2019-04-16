@@ -1,0 +1,6 @@
+{
+  "id" : "hrdb",
+  "type" : "DataService",
+  "packageNames" : [ "com.hngc.hrdb" ],
+  "title" : "hrdb"
+}
