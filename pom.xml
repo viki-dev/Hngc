@@ -13,6 +13,20 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/MyJavaService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/chat/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/hrdb/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -152,6 +166,8 @@
                         </goals>
                         <configuration>
                             <sources>
+                                <source>services/MyJavaService/src</source>
+                                <source>services/chat/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
@@ -373,6 +389,11 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
         </dependency>
     </dependencies>
     <dependencyManagement>

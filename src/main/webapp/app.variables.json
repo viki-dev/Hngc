@@ -28,11 +28,18 @@
     "name" : "supportedLocale",
     "owner" : "App",
     "category" : "wm.Variable",
-    "dataSet" : {
-      "en" : "English"
-    },
+    "dataBinding" : [ {
+      "target" : "dataValue",
+      "value" : "Name"
+    } ],
+    "dataSet" : [ {
+      "dataValue" : "Viki"
+    }, {
+      "dataValue" : "Bot"
+    } ],
     "type" : "string",
-    "isList" : false,
+    "isList" : true,
+    "twoWayBinding" : false,
     "saveInPhonegap" : false
   }
 }

@@ -14,7 +14,7 @@
 }
 .list:hover
 {
-    background-color:#c4c4c4;
+    background-color:#ededed;
 }
 .list
 {
@@ -55,4 +55,45 @@
 {
     border-radius:10px;
     border-width:1px;
+}
+.wm-app .list-group-item
+{
+    border:none;
+}
+.list-group
+{
+    border:none;
+}
+.media-list
+{
+    border:none;
+}
+.wm-app .list-group-item1
+{
+height:40px;
+}
+.wm-app .list-group-item1:hover 
+{
+      background-color:#ededed;
+       border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+.wm-app .list-group-item1:onclick
+{
+      background-color:#ededed;
+       border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+.wm-app .list-group-item1.active, .wm-app .list-group-item1.active:hover, .wm-app .list-group-item1.active:focus
+{   transition:0s;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    background-color:#e4f7fb;
+    color:#00796b;
 }
