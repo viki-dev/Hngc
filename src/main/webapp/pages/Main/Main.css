@@ -1,3 +1,55 @@
+.pop2
+{
+    
+}
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+.leftheader
+{
+    position:fixed;
+    z-index:60;
+    top:10;
+    left:10;
+}
+.leftcon
+{
+    position:relative;
+}
+
+.consts:hover
+{
+    background-color:#ededed;
+        border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.consts:onclick
+{   color:#00796b;
+    background-color:#e4f7fb;
+        border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.left{
+max-width:50%;
+    z-index:50;
+ position:fixed;
+
+    
+}
+.right{
+    z-index:0;
+ position:fixed;
+ overflow:hidden;
+      left:0;
+}
+
 .navbar1
 {   color:white;
     margin-left:20px ;
@@ -10,7 +62,8 @@
 }
 .topnav
 {
-  position:relative;  
+position:fixed;
+  top:10;
 }
 .list:hover
 {
@@ -18,7 +71,7 @@
 }
 .list
 {
-    transition:1.5s;
+   
 }
 .arrow
 {
@@ -30,7 +83,7 @@
     text-transform:none;
 }
 .leftbar
-{
+{   
     position:relative;
      border-right-style: none;
      border-width:1px;
@@ -70,10 +123,11 @@
 }
 .wm-app .list-group-item1
 {
-height:40px;
+height:30px;
 }
 .wm-app .list-group-item1:hover 
 {
+    
       background-color:#ededed;
        border-top-right-radius:30px;
     border-bottom-right-radius:30px;
@@ -82,6 +136,7 @@ height:40px;
 }
 .wm-app .list-group-item1:onclick
 {
+    
       background-color:#ededed;
        border-top-right-radius:30px;
     border-bottom-right-radius:30px;
@@ -96,4 +151,39 @@ height:40px;
     border-bottom-left-radius:0px;
     background-color:#e4f7fb;
     color:#00796b;
+}
+.pop1
+{
+    overflow:hidden;
+}
+.wm-app .list-group-item:onclick
+{
+    background-color:white;
+}
+.wm-app .list-group-item.active, .wm-app .list-group-item.active:hover, .wm-app .list-group-item.active:focus
+{
+     background-color:white;
+     color:inherit;
+}
+.ch:hover
+{
+    background-color:whitesmoke;
+}
+.pp
+{
+    overflow:hidden;
+  
+}
+.popl:hover
+{
+    background-color:whitesmoke;
+      border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+}
+.leftnav
+{
+   
+    left:50;
 }

@@ -1,0 +1,18 @@
+<wm-partial name="partial1">
+    <wm-container name="container1"></wm-container>
+    <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" name="MessagesList1" dataset="bind:Variables.Chat1MessagesData1.dataSet" navigation="None">
+        <wm-listtemplate layout="inline" name="listtemplate2">
+            <wm-container name="pictureContainer" class="media-left" horizontalalign="right">
+                <wm-picture width="32pt" height="32pt" name="Picture" shape="circle" picturesource="bind:Variables.databaseVariable2.dataSet[$i].pic" class="media-object" margin="unset unset unset 20px"></wm-picture>
+            </wm-container>
+            <wm-container class="media-body" padding="unset unset unset 1.25em" name="container7">
+                <wm-label name="Name" class="media-heading pull-left" caption="bind:Variables.Chat1MessagesData1.dataSet.name" fontunit="em" color="#000000" fontfamily="Product Sans"></wm-label>
+                <wm-label name="Time" caption="bind:Variables.Chat1MessagesData1.dataSet.time" class="pull-left" margin="0px unset unset 5px" fontfamily="Product Sans"></wm-label>
+                <wm-container name="container9" margin="20px unset unset -5px" class="bubble">
+                    <wm-popover popoverwidth="240" popoverheight="360" margin="unset 0.5px unset -75px" name="popover7" content="null" caption="bind:Variables.Chat1MessagesData1.dataSet[$i].message" color="#000000" fontfamily="Product Sans"></wm-popover>
+                </wm-container>
+            </wm-container>
+            <wm-container class="media-right" name="container8"></wm-container>
+        </wm-listtemplate>
+    </wm-list>
+</wm-partial>

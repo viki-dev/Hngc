@@ -15,13 +15,249 @@
     } ],
     "operation" : "toast"
   },
+  "databaseVariable1" : {
+    "_id" : "wm-databaseVariable1-wm.LiveVariable-1555928065580",
+    "name" : "databaseVariable1",
+    "owner" : "App",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : [ ],
+    "type" : "Members",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "inFlightBehavior" : "executeLast",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "transformationRequired" : false,
+    "liveSource" : "chat2",
+    "ignoreCase" : true,
+    "matchMode" : "startignorecase",
+    "orderBy" : "id asc",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "id",
+        "isPrimaryKey" : true,
+        "notNull" : false,
+        "length" : 0,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "name",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "name",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 20,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "pic",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "pic",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 200,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "online",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "online",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 200,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Members",
+      "fullyQualifiedName" : "com.hngc.chat2.Members",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "id" ]
+    },
+    "bindCount" : 1,
+    "tableName" : "members",
+    "tableType" : "TABLE",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "filterExpressions" : {
+      "condition" : "OR",
+      "rules" : [ {
+        "target" : "id",
+        "type" : "integer",
+        "matchMode" : "exact",
+        "value" : "bind:pageParams.id",
+        "required" : false,
+        "secondvalue" : "",
+        "isFirst" : true
+      }, {
+        "target" : "id",
+        "type" : "integer",
+        "matchMode" : "exact",
+        "value" : 0,
+        "required" : false,
+        "secondvalue" : ""
+      } ]
+    },
+    "package" : "com.hngc.chat2.Members"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
     "owner" : "App",
     "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Main",
+      "type" : "string"
+    } ],
     "operation" : "gotoPage",
-    "pageName" : "Main"
+    "pageName" : "Main",
+    "dataSet" : [ {
+      "type" : "string",
+      "target" : "Name",
+      "value" : "bind:Widgets.EmployeeList1.selecteditem.name"
+    } ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_test" : {
+    "_id" : "wm-goToPage_test-wm.NavigationVariable-1555912818243",
+    "name" : "goToPage_test",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "test",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "pageName" : "test",
+    "dataSet" : [ {
+      "type" : "string",
+      "target" : "name",
+      "value" : "bind:Widgets.EmployeeList1.selecteditem.name"
+    } ],
+    "pageTransitions" : "none"
+  },
+  "Members" : {
+    "_id" : "wm-Members-wm.Variable-1555659563333",
+    "name" : "Members",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "id",
+      "value" : "bind:Variables.databaseVariable1.dataSet[$i].id"
+    } ],
+    "dataSet" : [ {
+      "id" : 2,
+      "name" : "bot",
+      "pic" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MWrHukCPvR-ZMSGeTGWjTqwIhkKAUIQ____________ARiiv-z7______8B/s88-c/photo.jpg",
+      "online" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Basic_green_dot.png"
+    }, {
+      "id" : 1,
+      "name" : "muthu",
+      "pic" : "dataValue0",
+      "online" : "https://png.pngtree.com/svg/20160814/21d56ee19c.svg"
+    }, {
+      "id" : 0,
+      "name" : "viki",
+      "pic" : "https://lh3.googleusercontent.com/-vJyn6mXHHqo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reRsTMQaoC9iQvXqroHVA1sLbLbMg/s88-c-mo/photo.jpg",
+      "online" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Basic_green_dot.png"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1555930271822",
+    "name" : "serviceVariable1",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "AggregationInfo.filter",
+      "value" : "bind:Variables.staticVariable3.dataSet[$i].name"
+    } ],
+    "type" : "object",
+    "service" : "chat2",
+    "operation" : "getMembersAggregatedValues",
+    "operationId" : "MembersController_getMembersAggregatedValues",
+    "operationType" : "post",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "Members"
+  },
+  "staticVariable3" : {
+    "_id" : "wm-staticVariable3-wm.Variable-1555652978693",
+    "name" : "staticVariable3",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "name",
+      "value" : "bind:pageParams.name"
+    }, {
+      "target" : "pic",
+      "value" : "bind:Variables.Members.dataSet[$i].pic"
+    } ],
+    "dataSet" : [ {
+      "id" : "1",
+      "name" : "viki",
+      "message" : "hi",
+      "time" : "7:40am",
+      "pic" : "https://lh3.googleusercontent.com/-vJyn6mXHHqo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reRsTMQaoC9iQvXqroHVA1sLbLbMg/s88-c-mo/photo.jpg"
+    }, {
+      "id" : "2",
+      "name" : "Muthu",
+      "message" : "hi,how are you?",
+      "time" : "7:45am",
+      "pic" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MWrHukCPvR-ZMSGeTGWjTqwIhkKAUIQ____________ARiiv-z7______8B/s88-c/photo.jpg"
+    }, {
+      "id" : "1",
+      "name" : "viki",
+      "message" : "i am fine,how about you?",
+      "time" : "7:46am",
+      "pic" : "https://lh3.googleusercontent.com/-vJyn6mXHHqo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reRsTMQaoC9iQvXqroHVA1sLbLbMg/s88-c-mo/photo.jpg"
+    }, {
+      "id" : "2",
+      "name" : "Muthu",
+      "message" : "Yeah,i also fine",
+      "time" : "7:50am",
+      "pic" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MWrHukCPvR-ZMSGeTGWjTqwIhkKAUIQ____________ARiiv-z7______8B/s88-c/photo.jpg"
+    }, {
+      "id" : "1",
+      "name" : "viki",
+      "message" : "what can i do for you?",
+      "time" : "7:51am",
+      "pic" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MWrHukCPvR-ZMSGeTGWjTqwIhkKAUIQ____________ARiiv-z7______8B/s88-c/photo.jpg"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
   },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",

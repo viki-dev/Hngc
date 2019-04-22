@@ -1,0 +1,6 @@
+{
+  "id" : "chat2",
+  "type" : "DataService",
+  "packageNames" : [ "com.hngc" ],
+  "title" : "chat2"
+}

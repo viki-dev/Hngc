@@ -9,7 +9,23 @@
 }, {
   "name" : "Main",
   "type" : "PAGE",
-  "params" : [ ]
+  "params" : [ {
+    "name" : "Name",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "conversation",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "id",
+    "type" : "integer"
+  }, {
+    "name" : "pic",
+    "type" : "string"
+  }, {
+    "name" : "cname",
+    "type" : "string"
+  } ]
 }, {
   "name" : "footer",
   "type" : "FOOTER",
@@ -19,6 +35,13 @@
   "type" : "HEADER",
   "params" : [ ]
 }, {
+  "name" : "j",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "name",
+    "type" : "string"
+  } ]
+}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]
@@ -26,6 +49,13 @@
   "name" : "rightnav",
   "type" : "RIGHTNAV",
   "params" : [ ]
+}, {
+  "name" : "test",
+  "type" : "PAGE",
+  "params" : [ {
+    "name" : "name",
+    "type" : "string"
+  } ]
 }, {
   "name" : "topnav",
   "type" : "TOPNAV",
