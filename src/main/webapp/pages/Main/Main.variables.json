@@ -2014,6 +2014,28 @@
     "filterExpressions" : { },
     "package" : "com.hngc.hrdb.Employee"
   },
+  "serviceVariable4" : {
+    "_id" : "wm-serviceVariable4-wm.ServiceVariable-1556010241137",
+    "name" : "serviceVariable4",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.hngc.chat2.models.query.OwnpicResponse",
+    "service" : "chat2",
+    "operation" : "executeOwnpic",
+    "operationId" : "QueryExecutionController_executeOwnpic",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  },
   "staticVariable1" : {
     "_id" : "wm-staticVariable1-wm.Variable-1555479795232",
     "name" : "staticVariable1",

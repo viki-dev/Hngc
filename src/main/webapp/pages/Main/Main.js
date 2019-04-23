@@ -15,6 +15,7 @@ Page.onReady = function() {
      * 'Page.Widgets.username.datavalue'
      */
 
+    alert(Page.Variables.serviceVariable4.getData)
     Page.Widgets.EmployeeList1.selectfirstitem = true;
 
 
@@ -108,5 +109,8 @@ Page.popover2Show = function($event, widget) {
     document.getElementsByClassName('consts').style = " color:#00796b; background-color:#e4f7fb;border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-bottom-left-radius:10px;";
 };
 Page.EmployeeList1Beforedatarender = function(widget, $data) {
+
+};
+Page.popover1Show = function($event, widget) {
 
 };

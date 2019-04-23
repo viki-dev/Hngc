@@ -14,6 +14,16 @@
     "type" : "string"
   } ]
 }, {
+  "name" : "contactinfo",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "pic",
+    "type" : "string"
+  } ]
+}, {
   "name" : "conversation",
   "type" : "PARTIAL",
   "params" : [ {

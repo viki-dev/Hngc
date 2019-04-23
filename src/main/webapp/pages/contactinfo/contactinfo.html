@@ -1,0 +1,50 @@
+<wm-partial name="partial1">
+    <wm-container name="container1" backgroundcolor="#ffffff" width="280" height="130">
+        <wm-container name="container2">
+            <wm-layoutgrid name="layoutgrid1">
+                <wm-gridrow name="gridrow1">
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1" padding="20px unset unset 15px">
+                        <wm-picture name="picture1" width="40" height="40" picturesource="bind:pageParams.pic" margin="unset unset unset 10px" class="pic"></wm-picture>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn2">
+                        <wm-layoutgrid name="layoutgrid2">
+                            <wm-gridrow name="gridrow3">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn5">
+                                    <wm-label padding="unset 0.5em" name="label1" caption="bind:pageParams.name" fontsize="30" margin="5px unset unset unset"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow4">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                                    <wm-label padding="unset 0.5em" name="label2" caption="Someone@gmail.com" margin="unset unset unset 10px"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow2">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn3">
+                        <wm-layoutgrid name="layoutgrid3" width="280">
+                            <wm-gridrow name="gridrow5" padding="10px unset unset unset">
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn9" padding="unset unset unset 10px">
+                                    <wm-label padding="unset 0.5em" name="label3" caption="Message"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="2" name="gridcolumn13" horizontalalign="right">
+                                    <wm-icon name="icon2" iconclass="wi wi-email fa-lg"></wm-icon>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="2" name="gridcolumn14" horizontalalign="right">
+                                    <wm-icon name="icon3" iconclass="wi wi-calendar fa-lg"></wm-icon>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="2" name="gridcolumn15" horizontalalign="right">
+                                    <wm-icon name="icon4" iconclass="fa fa-at fa-lg"></wm-icon>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="2" name="gridcolumn16" horizontalalign="right">
+                                    <wm-icon name="icon5" iconclass="wi wi-videocam fa-lg"></wm-icon>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-container>
+    </wm-container>
+</wm-partial>

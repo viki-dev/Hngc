@@ -1,1 +1,35 @@
-{ }
+{
+  "ownpic" : {
+    "name" : "ownpic",
+    "description" : "get receiver pic",
+    "version" : "V2",
+    "queryString" : "select pic from members where name=\"viki\"",
+    "countQueryString" : "select count(*) from (select pic from members where name=\"viki\") wmTempTable",
+    "offlineQueryString" : null,
+    "nativeSql" : true,
+    "fetchCount" : true,
+    "type" : "SELECT",
+    "parameters" : [ ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "identifiers" : [ ],
+    "response" : {
+      "typeRef" : "com.hngc.chat2.models.query.OwnpicResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "pic",
+        "fieldName" : "pic",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}
